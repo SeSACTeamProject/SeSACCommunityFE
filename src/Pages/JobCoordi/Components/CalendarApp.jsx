@@ -9,6 +9,7 @@ const CalendarApp = () => {
         // 캘린더 인스턴스 생성
         const calendar = new Calendar(calendarRef.current, {
             defaultView: "month", // 기본 월간 달력
+            // 팝업 커스텀 필요요
             useDetailPopup: true, // 일정 상세 팝업 활성화
             useFormPopup: true, // 일정 추가 팝업 활성화
             calendars: [
@@ -47,9 +48,9 @@ const CalendarApp = () => {
     }, []);
 
     return (
-        <div className="calendar-container">
+        <div className="calendar-container p-2 bg-indigo-400">
             {/* 캘린더가 그려질 요소 */}
-            <div ref={calendarRef} style={{ height: "800px" }} />
+            <div ref={calendarRef} style={{ height: "580px" }} />
         </div>
     );
 };
