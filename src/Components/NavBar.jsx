@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     return(
         <nav className="relative h-24 w-full bg-amber-300 z-10">
+            {/* 반응형 설정 필요?(햄버거버튼?) */}
             <ul className="flex justify-center items-center h-full bg-violet-200 text-lg">
                 <li className="relative group bg-fuchsia-500 w-48 h-full flex items-center justify-center hover:bg-green-200 hover:cursor-pointer">
                     {/* <div className="hover:bg-green-200 hover:cursor-pointer"> */}
