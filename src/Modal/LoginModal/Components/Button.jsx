@@ -12,8 +12,6 @@ const Button = ({ text, onClick, variant = "primary" }) => {
   return (
     <button
       className={`${baseStyle} ${variantStyles[variant]}`}
-      // className="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-      // className="w-full p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
       onClick={onClick}
     >
       {text}

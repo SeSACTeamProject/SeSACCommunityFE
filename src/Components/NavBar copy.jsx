@@ -3,57 +3,59 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 // import useNavBarStore from "../Store/NavBarStore";
 
 const NavBar = () => {
-    // const { isMenuOpen, toggleMenu } = useNavBarStore();
-    // nav>ul 크기 동일하게 나누고(o)
-    // 로고추가(header)
-    // 맨위우측에 작게 마이페이지 이런거 있는건 헤더로 따로 만들어서 추가를 해야하는지...?(o)
+  // const { isMenuOpen, toggleMenu } = useNavBarStore();
+  // nav>ul 크기 동일하게 나누고(o)
+  // 로고추가(header)
+  // 맨위우측에 작게 마이페이지 이런거 있는건 헤더로 따로 만들어서 추가를 해야하는지...?(o)
 
-    return(
-        // <nav className="fixed top-0 left-0 w-full p-2 bg-amber-300 z-10">
-        <nav className="relative h-24 w-full p-2 bg-amber-300 z-10">
-            <ul className="flex justify-center items-center space-x-6 h-full bg-violet-200">
-                <li className="relative group bg-fuchsia-500 h-full flex items-center justify-center">
-                    <div className="hover:bg-green-200 hover:cursor-pointer">
-                        커뮤니티
-                    </div>
-                    <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg">
-                        <li>
-                            <Link className="block px-4 py-2 hover:bg-green-100">모집</Link>
-                        </li>
-                        <li>
-                            <Link className="block px-4 py-2 hover:bg-green-100">진행 상황 공유</Link>
-                        </li>
-                    </ul>
-                </li>
-                <li className="relative group bg-gray-100 h-full flex items-center justify-center">
-                    <div className="hover:bg-green-200 hover:cursor-pointer">
-                        공지사항
-                    </div>
-                    <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg">
-                        <li>
-                            <Link className="block px-4 py-2 hover:bg-green-100">test1</Link>
-                        </li>
-                        <li>
-                            <Link className="block px-4 py-2 hover:bg-green-100">test2</Link>
-                        </li>
-                    </ul>
-                </li>
-                <li className="relative group">
-                    <div className="hover:bg-green-200 hover:cursor-pointer">
-                        About SeSAC
-                    </div>
-                    <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg">
-                        <li>
-                            <Link className="block px-4 py-2 hover:bg-green-100">test1</Link>
-                        </li>
-                        <li>
-                            <Link className="block px-4 py-2 hover:bg-green-100">test2</Link>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    );
+  return (
+    // <nav className="fixed top-0 left-0 w-full p-2 bg-amber-300 z-10">
+    <nav className="relative h-24 w-full p-2 bg-amber-300 z-10">
+      <ul className="flex justify-center items-center space-x-6 h-full bg-violet-200">
+        <li className="relative group bg-fuchsia-500 h-full flex items-center justify-center">
+          <div className="hover:bg-green-200 hover:cursor-pointer">
+            커뮤니티
+          </div>
+          <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg">
+            <li>
+              <Link className="block px-4 py-2 hover:bg-green-100">모집</Link>
+            </li>
+            <li>
+              <Link className="block px-4 py-2 hover:bg-green-100">
+                진행 상황 공유
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li className="relative group bg-gray-100 h-full flex items-center justify-center">
+          <div className="hover:bg-green-200 hover:cursor-pointer">
+            공지사항
+          </div>
+          <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg">
+            <li>
+              <Link className="block px-4 py-2 hover:bg-green-100">test1</Link>
+            </li>
+            <li>
+              <Link className="block px-4 py-2 hover:bg-green-100">test2</Link>
+            </li>
+          </ul>
+        </li>
+        <li className="relative group">
+          <div className="hover:bg-green-200 hover:cursor-pointer">
+            About SeSAC
+          </div>
+          <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg">
+            <li>
+              <Link className="block px-4 py-2 hover:bg-green-100">test1</Link>
+            </li>
+            <li>
+              <Link className="block px-4 py-2 hover:bg-green-100">test2</Link>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default NavBar;

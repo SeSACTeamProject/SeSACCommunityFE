@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import React from "react";
 import InputField from "./InputField";
 import Button from "./Button";
 import useLoginStore from "../../../Store/LoginStore";
@@ -7,7 +7,6 @@ const LoginForm = ({ onLogin }) => {
   const { id, password, setId, setPassword } = useLoginStore();
 
   return (
-    // <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm space-y-4 flex flex-col">
     <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-xl space-y-4 flex flex-col">
       <div className="flex flex-col space-y-2">
         <InputField
@@ -38,9 +37,9 @@ const LoginForm = ({ onLogin }) => {
 
       <hr />
 
-      <Link to="/signup">
+      {/* <Link to="/signup">
         <Button text={"회원가입"} variant="signup" />
-      </Link>
+      </Link> */}
     </div>
   );
 };
