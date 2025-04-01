@@ -1,5 +1,5 @@
 import { create } from "zustand";
-4
+
 const useSignupStore = create((set) => ({
     id: '',
     password: '',
