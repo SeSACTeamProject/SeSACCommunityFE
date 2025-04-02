@@ -7,8 +7,6 @@ import SignupPage from './Pages/SignupPage/SignupPage';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import JobCoordiPage from './Pages/JobCoordiPage/JobCoordiPage';
 
-import AboutSeSACPage from './Pages/AboutSeSACPage/AboutSeSACPage'; { /**작업 김인호 */}
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -35,12 +33,8 @@ const MainLayout = () => {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/jobcoordi" element={<JobCoordiPage />} />
-          { /**작업 김인호 */}
-          <Route path="/about/*" element={<AboutSeSACPage/>} />
-          { /**작업 김인호 */}
         </Routes>
       </div>
-
     </div>
   );
 };

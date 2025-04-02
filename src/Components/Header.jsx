@@ -22,8 +22,6 @@ const Header = () => {
                 <Link>마이페이지</Link>
                 <Link>로그아웃</Link>
             </div>
-
-        
         </header>
     );
 };

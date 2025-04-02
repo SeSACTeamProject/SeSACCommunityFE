@@ -34,19 +34,17 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </li>
-                <li className="relative group bg-blue-200 h-full flex items-center justify-center">
-                    <div className="hover:bg-green-200 hover:cursor-pointer p-4">
+                <li className="relative group w-48 h-full bg-lime-300 flex items-center justify-center hover:bg-green-200 hover:cursor-pointer">
+                    {/* <div className="hover:bg-green-200 hover:cursor-pointer"> */}
+                    <div>
                         About SeSAC
                     </div>
-                    <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg w-40">
+                    <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-b-lg top-full w-48">
                         <li>
-                            <Link to="/about/intro" className="block px-4 py-2 hover:bg-green-100">SeSAC 소개</Link>
+                            <Link className="block px-4 py-4 hover:bg-green-100">test1</Link>
                         </li>
                         <li>
-                            <Link to="/about/roadmap" className="block px-4 py-2 hover:bg-green-100">교육 로드맵</Link>
-                        </li>
-                        <li>
-                            <Link to="/about/directions" className="block px-4 py-2 hover:bg-green-100">오시는 길</Link>
+                            <Link className="block px-4 py-4 hover:bg-green-100">test2</Link>
                         </li>
                     </ul>
                 </li>
