@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logo.png";
-import useLoginModalStore from "../Store/LoginModalStore";
-import LoginModal from "../Modal/LoginModal/LoginModal";
+import useLoginModalStore from "../Store/AuthModalStore";
+import LoginModal from "../Modal/AuthModal/AuthModal";
 
 const Header = () => {
   const { isOpen, openModal } = useLoginModalStore();
